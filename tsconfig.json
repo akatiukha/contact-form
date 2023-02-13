@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,7 +16,13 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"],
+  "globals": {
+    "ts-jest": {
+      // ts-jest configuration goes here
+      // https://huafu.github.io/ts-jest/user/config/#ts-jest-options
+      // specify tsconfig.json to be used by ts-jest
+      "tsconfig": "<rootDir>/src/setupTests.ts"
+    }
+  }
 }
