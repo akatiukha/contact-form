@@ -1,4 +1,4 @@
-interface TextInputProps {
+export interface InputTextProps {
   type: string;
   label: string;
   id: string;
@@ -7,4 +7,12 @@ interface TextInputProps {
   // pattern: string;
 }
 
-export default TextInputProps;
+export interface InputSelectItem {
+  value: string;
+  selected: boolean;
+}
+
+export interface InputSelectProps {
+  options: InputSelectItem[];
+  label: string;
+}

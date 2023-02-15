@@ -1,9 +1,9 @@
 import React from 'react';
-import { FormGroup } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import TextInputProps from '../interfaces';
+import { FormGroup } from 'react-bootstrap';
+import { InputTextProps } from '../interfaces';
 
-const InputText = ({ type, label, id, required }: TextInputProps) => {
+const InputText = ({ type, label, id, required }: InputTextProps) => {
   return (
     <FormGroup>
       <Form.Label htmlFor="inputPassword5">{label}</Form.Label>
