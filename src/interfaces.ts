@@ -1,6 +1,7 @@
 export interface InputTextProps {
   type: string;
   label: string;
+  sup?: string;
   id: string;
   required?: boolean;
   // maxLength: string;
@@ -15,4 +16,10 @@ export interface InputSelectItem {
 export interface InputSelectProps {
   options: InputSelectItem[];
   label: string;
+  sup?: string;
+}
+
+export interface InputTextAreaProps {
+  label: string;
+  sup?: string;
 }

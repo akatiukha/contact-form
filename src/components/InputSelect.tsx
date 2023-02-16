@@ -4,10 +4,13 @@ import Form from 'react-bootstrap/Form';
 
 import { InputSelectProps } from '../interfaces';
 
-const InputSelect = ({ options, label }: InputSelectProps) => {
+const InputSelect = ({ options, label, sup }: InputSelectProps) => {
   return (
     <FormGroup>
-      <Form.Label>{label}</Form.Label>
+      <Form.Label>
+        {label}
+        {sup}
+      </Form.Label>
       <Form.Select aria-label="Default select example">
         {options.map((option) => (
           <option value={option.value} selected={option.selected}>
